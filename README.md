@@ -1,6 +1,6 @@
-# 🎬 YouTube Automation Bot - Self-Learning AI Video Enhancement
+# 🎬 YouTube Automation Bot - Adaptive AI Video Enhancement
 
-**Transform reused content into viral-ready videos with Hybrid Vision AI, Self-Learning Watermark Detection, and Smart Audio Remixing.**
+**Transform reused content into viral-ready videos with Hybrid Vision AI, Adaptive Watermark Detection, and Smart Audio Remixing.**
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -10,16 +10,16 @@
 
 ## ✨ Key Features
 
-### 🧠 **Self-Learning Watermark System (Triple Refinement)**
+### 🧠 **Adaptive Watermark System (User-Guided)**
 
-- **Hybrid Vision Engine**: Combines **Google Gemini Vision** (Contextual Detection) + **OpenCV ORB** (Precise Tracking) + **Machine Learning** (Validation).
+- **Hybrid Vision Engine**: Combines **Google Gemini Vision** (Contextual Detection) + **OpenCV ORB** (Precise Tracking).
 - **Tri-Level Removal**:
-  - **Static Delogo**: For fixed logos (with specific time-range support).
-  - **Dynamic Masking**: For moving watermarks using trajectory tracking and clamp logic.
-  - **Drift Clamp**: Prevents mask from wandering off the watermark during motion.
+  - **Static Delogo**: For fixed logos.
+  - **Dynamic Masking**: For moving watermarks using trajectory tracking.
+  - **Drift Clamp**: Prevents mask from wandering during motion.
 - **Feedback Loop**: Learns from your Telegram commands:
-  - `Yes` / `/approve`: "Correct detection." (Reinforces Positive Model)
-  - `No` / `/reject`: "Wrong detection." (Reinforces Negative Model & Triggers **Aggressive Retry**)
+  - `Yes` / `/approve`: "Correct detection." (Proceeds to upload)
+  - `No` / `/reject`: "Wrong detection." (Triggers **Aggressive Retry** with lower thresholds)
 
 ### 🗣️ **AI Narrator & Voiceover (NEW)**
 
@@ -113,7 +113,26 @@ ENABLE_AUTO_MUSIC_GEN=yes       # Generate music if needed
 | `/approve`           | Confirm upload to YouTube.                 |
 | `/reject`            | Discard video and delete file.             |
 
-### **Workflow**
+### **Workflow Chart**
+
+```mermaid
+graph TD
+    A[Start: Send Link/File] -->|Downloader| B(Metadata Analysis)
+    B --> C{Watermark?}
+    C -->|Yes| D[Hybrid Vision Removal]
+    C -->|No| E[Direct Processing]
+    D --> E
+    E --> F[Ferrari Composer]
+    F -->|Transform| G[Color Grade + Resize]
+    F -->|Audio| H[Round-Robin Music Mixing]
+    H --> I[Preview Generation]
+    I --> J{User Review}
+    J -->|Approved| K[Upload to YouTube]
+    J -->|Rejected| L[Delete & Audit]
+    J -->|No - Retry| D
+```
+
+### **Step-by-Step**
 
 1. **Send Video**: Bot downloads (`downloader.py`) and analyzes metadata.
 2. **Processing**:
