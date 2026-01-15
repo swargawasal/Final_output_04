@@ -1,0 +1,114 @@
+
+def _save_sidecar(video_path: str, caption_meta: Dict, pipeline_metrics: Dict):
+    """
+    Saves metadata sidecar reliably.
+    """
+    try:
+        sidecar_path = os.path.splitext(video_path)[0] + ".json"
+        
+        # Load existing if any (to preserve other keys)
+        data = {}
+        if os.path.exists(sidecar_path):
+            try:
+                with open(sidecar_path, 'r') as f: data = json.load(f)
+            except: pass
+            
+        data.update({
+            "caption_data": caption_meta,
+            "pipeline_metrics": pipeline_metrics,
+            "last_processed": datetime.now().isoformat()
+        })
+        
+        with open(sidecar_path, "w") as f:
+            json.dump(data, f, indent=2)
+            
+    except Exception as e:
+        logger.warning(f"⚠️ Failed to save sidecar metadata: {e}")
+
+def apply_unified_transform(
+    input_path: str, 
+    output_path: str, 
+    target_res: Tuple[int, int] = (1080, 1920), 
+    speed_var: float = 0.0, 
+    color_intensity: float = 0.0,
+    color_filter: str = "cinematic",
+    human_safe_mode: bool = False
+):
+    """
+    FERRARI MODE: Combines Upscale + Speed Ramp + Color Grading into ONE FFmpeg pass.
+    Drastically reduces I/O and encoding generations.
+    """
+    logger.info(f"🏎️ Unified Transform: Upscale={target_res}, Speed={speed_var:.2f}, Color={color_intensity:.2f}")
+    
+    # 1. Scaling Filter
+    # Force 1080x1920, usually "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2"
+    # But for Shorts, we might want crop? Let's stick to "normalize_video" logic (pad).
+    w, h = target_res
+    scale_filter = f"scale={w}:{h}:force_original_aspect_ratio=decrease,pad={w}:{h}:(ow-iw)/2:(oh-ih)/2"
+    
+    # 2. Speed Ramp Filter
+    speed_var = max(0.0, min(speed_var, 1.0))
+    # Cinematic ramp values
+    slow = 1.0 - (0.08 + speed_var * 0.05)
+    fast = 1.0 + (0.08 + speed_var * 0.05)
+    
+    # Simple Segmented Ramp (Timestamps 0-2, 2-6, 6+)
+    # Note: timestamps refer to INPUT time. If we scale first, time is same.
+    # setpts modifies timestamps.
+    ramp_filter = (
+        f"setpts='"
+        f"if(lt(T,2),PTS/{slow},"
+        f"if(lt(T,6),PTS,"
+        f"PTS/{fast}))'"
+    )
+    
+    # 3. Color Grade Filter
+    color_intensity = max(0.0, min(color_intensity, 1.0))
+    if human_safe_mode: 
+        color_intensity *= 0.7
+        sharpen = "0.3:3:3:0.0"
+    else:
+        sharpen = "0.6:5:5:0.0"
+
+    # Cinematic Curves & EQ
+    # This is a simplified "Cinematic" preset equivalent to previous code
+    # curves=all='0/0.02...
+    color_filter_str = (
+        f"curves=all='0/0.02 0.15/0.12 0.5/0.5 0.85/0.9 1/0.98',"
+        f"colorbalance="
+        f"rs={-0.02*color_intensity}:gs={-0.02*color_intensity}:bs={-0.02*color_intensity}:"
+        f"rm={0.01*color_intensity}:gm={0.01*color_intensity}:bm={0.01*color_intensity}:"
+        f"rh={0.02*color_intensity}:gh={0.015*color_intensity}:bh=0,"
+        f"hue=s={1.0 + 0.02*color_intensity},"
+        f"unsharp=5:5:{sharpen}"
+    )
+    
+    # COMPOSE CHAIN
+    # Input -> [Scale] -> [Ramp] -> [Color] -> Output?
+    # Order matters. 
+    # Scale first is best for consistent pixel processing?
+    # Actually, Color/Sharpen is better on higher res? Yes.
+    # Speed ramp affects timestamps. 
+    # setpts MUST be carefully placed.
+    
+    vf = f"{scale_filter},{ramp_filter},{color_filter_str}"
+    
+    # Audio Tempo for Speed Ramp
+    # Slight variation
+    audio_speed = 1.0 # Keep simple or use random?
+    # Previous code used random.uniform(0.97, 1.03)
+    # Let's use 1.0 to be safe/clean for now.
+    af = "atempo=1.0" 
+
+    cmd = [
+        FFMPEG_BIN, "-y", "-i", input_path,
+        "-vf", vf,
+        "-af", af,
+        "-c:v", "libx264",
+        "-preset", "fast", 
+        "-crf", "20",
+        "-c:a", "aac",
+        output_path
+    ]
+    
+    _run_command(cmd, check=True)

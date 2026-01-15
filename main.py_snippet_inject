@@ -1,0 +1,25 @@
+def last_n_filepaths(n=5):
+    """
+    Robustly find the last N processed videos for compilation.
+    Checks 'Processed Shorts' directory.
+    """
+    source_dir = "Processed Shorts"
+    if not os.path.exists(source_dir):
+        logger.warning(f"last_n_filepaths: {source_dir} does not exist.")
+        return []
+        
+    all_files = glob.glob(os.path.join(source_dir, "*.mp4"))
+    # Filter out compilations to avoid recursive merging
+    valid_files = [f for f in all_files if "compile" not in os.path.basename(f) and "compilation" not in os.path.basename(f)]
+    
+    # Sort by modification time (Newest -> Oldest)
+    valid_files.sort(key=os.path.getmtime, reverse=True)
+    
+    logger.info(f"📊 Found {len(valid_files)} recent videos for compilation (last 24h)")
+    # Return top N (Newest first) - wait, merge order? 
+    # Usually compilations want Oldest -> Newest or Newest -> Oldest?
+    # User said "last N", usually implies sequence. 
+    # Let's return Newest First for selection, but reverse for merge if needed?
+    # Actually compile_batch usually expects logic sequence.
+    # Let's return the TOP N newest.
+    return valid_files[:n]

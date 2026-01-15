@@ -1,0 +1,379 @@
+DEBUG: Entered reject_upload at 2025-12-10 01:37:42.828050
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Rejecting file: Processed Shorts\final_Jacqueline_fernandez_hot.mp4
+DEBUG: CWD: D:\whatupppgi\reused-transformative-bot-official
+DEBUG: File exists?: True
+DEBUG: File deleted successfully
+DEBUG: Entered approve_upload at 2025-12-10 01:56:16.007505
+DEBUG: Final path: Processed Shorts\final_Jacqueline_fernandez_hot_1.mp4
+DEBUG: Upload result: https://youtube.com/watch?v=q3S8EWHkFBU
+DEBUG: Entered approve_upload at 2025-12-10 02:05:06.225907
+DEBUG: Final path: Processed Shorts\final_Jacqueline_fernandez_hot_2.mp4
+DEBUG: Upload result: https://youtube.com/watch?v=dZcijrJimxI
+DEBUG: Entered approve_upload at 2025-12-11 10:49:44.656195
+DEBUG: Final path: Processed Shorts\final_Disha_patani_hot_1.mp4
+DEBUG: Upload result: https://youtube.com/watch?v=SnPDo2YfF9s
+DEBUG: Entered reject_upload at 2025-12-11 19:49:01.356021
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Rejecting file: Processed Shorts\final_Nora_hot_1.mp4
+DEBUG: CWD: D:\whatupppgi\reused-transformative-bot-official
+DEBUG: File exists?: True
+DEBUG: File deleted successfully
+DEBUG: Entered reject_upload at 2025-12-11 20:39:42.942931
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-11 22:00:32.997366
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-13 07:46:48.989521
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-13 09:26:10.665752
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-14 04:14:33.313668
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-14 10:44:05.963403
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-14 11:47:08.117746
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-14 12:11:48.142982
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-14 20:12:58.270310
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-15 14:57:08.503380
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-15 19:38:52.962126
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-15 21:13:46.924284
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-15 21:25:43.448182
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-16 02:51:48.070159
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-16 02:59:33.895031
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-16 03:18:53.890315
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-16 03:43:07.670101
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-16 04:41:55.635610
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-16 06:14:56.575529
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-16 06:23:21.003292
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-16 06:45:01.135527
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-17 02:38:19.055113
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-17 10:17:17.197915
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-17 11:27:51.542277
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-17 11:57:25.008275
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-17 12:24:02.789985
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-18 17:21:55.913738
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-20 15:08:03.338178
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-20 16:11:14.995652
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-20 16:27:38.373774
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-20 16:58:46.552469
+DEBUG: Session state: WAITING_FOR_TITLE_EXPANSION
+DEBUG: Nothing to reject. Session state: WAITING_FOR_TITLE_EXPANSION
+DEBUG: Entered reject_upload at 2025-12-20 17:13:08.811171
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-20 18:28:01.796462
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-20 19:24:03.264995
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-20 20:51:24.638909
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 01:23:04.266808
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 01:49:47.179600
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 02:13:42.227223
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 02:48:32.863148
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 02:55:17.683504
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 03:03:07.000393
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 03:21:41.331204
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 03:32:08.645165
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 03:39:46.654397
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 04:24:28.877590
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 04:47:08.743112
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 04:59:33.573114
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 06:40:32.750745
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 06:56:23.132921
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-21 07:43:07.426943
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-22 04:03:48.074273
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-22 05:15:50.389863
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-22 06:12:47.154956
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-22 09:14:21.740300
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-22 10:48:19.287164
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-22 14:29:41.005562
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-22 14:54:19.532408
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-22 19:41:01.882666
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 06:17:25.734849
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 06:26:41.308799
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 06:29:20.801823
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 06:45:49.290402
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 07:39:37.254539
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 07:58:15.168898
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 07:59:54.385812
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 08:02:56.808656
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 08:31:15.643507
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 08:39:44.582248
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 08:56:24.260051
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 09:13:41.924662
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 09:56:00.995258
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 15:05:03.489606
+DEBUG: Session state: WAITING_FOR_TITLE
+DEBUG: Nothing to reject. Session state: WAITING_FOR_TITLE
+DEBUG: Entered reject_upload at 2025-12-23 15:44:58.760714
+DEBUG: Session state: WAITING_FOR_TITLE
+DEBUG: Nothing to reject. Session state: WAITING_FOR_TITLE
+DEBUG: Entered reject_upload at 2025-12-23 15:54:48.302738
+DEBUG: Session state: WAITING_FOR_TITLE
+DEBUG: Nothing to reject. Session state: WAITING_FOR_TITLE
+DEBUG: Entered reject_upload at 2025-12-23 16:11:40.609382
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 16:25:47.905229
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 16:59:11.878320
+DEBUG: Session state: WAITING_FOR_TITLE_EXPANSION
+DEBUG: Nothing to reject. Session state: WAITING_FOR_TITLE_EXPANSION
+DEBUG: Entered reject_upload at 2025-12-23 18:06:47.655610
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 19:08:42.451340
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 19:17:06.472248
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 19:28:22.334453
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 20:00:45.772920
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 20:28:20.651194
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 20:49:58.864427
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 20:59:28.078486
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 21:15:05.147747
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 21:21:41.811857
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 21:35:08.756088
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 21:50:31.989703
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 21:56:34.581228
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 22:05:24.809378
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 22:12:18.716553
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 22:32:09.528265
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-23 23:01:21.527071
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-25 11:04:22.418386
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-25 12:04:05.678050
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-25 12:24:14.912489
+DEBUG: Session state: None
+DEBUG: Nothing to reject. Session state: None
+DEBUG: Entered reject_upload at 2025-12-26 13:05:09.023592
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 13:15:21.669038
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 13:43:13.196403
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 13:58:53.747736
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 14:18:03.081489
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 14:25:13.224969
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 15:04:05.756964
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 16:26:53.750373
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 16:44:37.212033
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 16:59:49.325279
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 17:05:20.010033
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 17:28:26.547193
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 17:50:06.168438
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 18:12:40.220666
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 18:31:31.698230
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 18:39:17.014326
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 18:54:42.506493
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 19:14:43.977130
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 19:44:40.499325
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 19:56:00.422221
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 20:23:59.532713
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 21:11:58.170133
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 21:55:53.098974
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 22:03:46.717309
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-26 23:40:05.597515
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-27 01:15:07.828203
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-27 02:25:17.012255
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-27 15:57:43.371848
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-27 16:04:07.040704
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-28 11:16:16.507761
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-28 11:23:21.415545
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-28 15:44:58.790342
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-28 22:27:08.712497
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-29 03:25:20.810485
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2025-12-30 12:58:06.836492
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-01 17:26:46.545629
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-01 17:55:45.260702
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-01 18:14:02.605596
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-01 18:21:06.252355
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-01 18:27:53.713575
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-01 18:48:09.254638
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-01 18:58:04.757037
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-01 19:40:57.355454
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-01 21:45:02.728741
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-02 00:04:46.354903
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-02 01:14:38.077198
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-02 01:30:15.287772
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-02 01:34:19.239330
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-02 01:49:04.632313
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-02 03:27:23.002043
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-02 03:43:38.416804
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-05 20:01:06.310007
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-05 20:57:08.538419
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-05 21:22:58.422212
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-06 01:10:37.342161
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-06 22:54:55.021013
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-06 23:12:04.492930
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-06 23:18:58.810931
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-06 23:40:41.951784
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-07 00:15:20.037800
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-07 00:49:03.837476
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-08 02:03:59.115360
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-10 21:20:13.405142
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-10 22:39:05.582084
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-10 23:55:08.773245
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-11 00:00:30.758157
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-11 00:40:23.394289
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-11 00:52:37.021007
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-13 01:30:50.621517
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-13 02:02:44.978665
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-14 00:22:19.118256
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-14 09:20:31.510178
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-14 10:24:09.009371
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-14 10:50:44.588432
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-14 23:20:55.096093
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-15 00:03:55.830184
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-15 02:02:29.471519
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-15 02:10:36.728681
+DEBUG: Session state: WAITING_FOR_APPROVAL
+DEBUG: Entered reject_upload at 2026-01-15 07:09:01.699982
+DEBUG: Session state: WAITING_FOR_APPROVAL

@@ -1,0 +1,46 @@
+{
+    "0": {
+        "label": "Gym Workout",
+        "suffix": " | Gym workout | Fitness routine | Workout clips | Fitness lifestyle"
+    },
+    "1": {
+        "label": "Airport Look",
+        "suffix": " | Airport look | Travel style | Travel clips | Celebrity lifestyle"
+    },
+    "2": {
+        "label": "Red Carpet Event",
+        "suffix": " | Red carpet appearance | Style check | Event highlights | Celebrity lifestyle"
+    },
+    "3": {
+        "label": "Street Outfit",
+        "suffix": " | Casual street look | Outfit check | Daily routine | Celebrity lifestyle"
+    },
+    "4": {
+        "label": "Evening Party",
+        "suffix": " | Evening party look | Fashion moment | Event capture | Celebrity lifestyle"
+    },
+    "5": {
+        "label": "Minimal Lifestyle",
+        "suffix": " | Coffee run | Minimal outfit | Urban lifestyle | Lifestyle clips | Celebrity lifestyle  "
+    },
+    "6": {
+        "label": "Photoshoot BTS",
+        "suffix": " | Photoshoot BTS | Styling details | Glam performance | Celebrity lifestyle"
+    },
+    "7": {
+        "label": "Traditional Festival",
+        "suffix": " | Festival appearance | Traditional outfit | Culture vibes | Celebrity lifestyle"
+    },
+    "8": {
+        "label": "Vacation Diary",
+        "suffix": " | Travel diary | Comfort fashion | Vacation vibes | Celebrity lifestyle"
+    },
+    "9": {
+        "label": "Weekend Outing",
+        "suffix": " | Weekend outing | Relaxed fashion | Weekend clips | Celebrity lifestyle"
+    },
+    "10": {
+        "label": "Event Arrival",
+        "suffix": " | Event arrival | Elegant outfit | Event clips | Celebrity lifestyle"
+    }
+}

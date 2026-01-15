@@ -1,0 +1,28 @@
+# Core Dependencies
+python-telegram-bot==21.0
+python-dotenv==1.0.0
+requests==2.31.0
+
+# Video Processing
+yt-dlp==2024.4.9
+numpy>=1.24.0,<2.0.0
+# Use headless OpenCV for server/termux environments to avoid GUI deps
+opencv-python-headless==4.10.0.84
+
+# Audio Processing
+gTTS==2.5.1
+
+# Utilities
+tqdm==4.66.1
+Pillow==10.1.0
+
+# YouTube Upload
+google-api-python-client==2.108.0
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.1.1
+
+# AI Caption Generation (Gemini)
+google-generativeai>=0.8.3
+
+# OpenAI (Brain)
+openai>=1.0.0

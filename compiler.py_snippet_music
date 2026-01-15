@@ -1,0 +1,47 @@
+def _generate_music_loop(duration, output_path):
+    """
+    Generates a music track of exact duration by looping files from 'music/' directory.
+    Uses FFMPEG concat demuxer.
+    """
+    music_dir = "music"
+    if not os.path.exists(music_dir):
+        os.makedirs(music_dir, exist_ok=True)
+        return False
+        
+    music_files = glob.glob(os.path.join(music_dir, "*.mp3")) + glob.glob(os.path.join(music_dir, "*.wav"))
+    if not music_files:
+        logger.warning("⚠️ No music files found in 'music/' for fallback.")
+        return False
+
+    # Randomize start order
+    random.shuffle(music_files)
+    
+    # Estimate counts needed
+    # We don't verify length of each mp3 to save time, assume avg 3 mins? 
+    # Better: just repeat the list 100 times, ffmpeg -t will cut it.
+    # Actually, we should be safe. 50 repeats of the whole list is enough for any short compilation.
+    
+    list_path = os.path.join(tempfile.gettempdir(), f"music_list_{int(time.time())}.txt")
+    with open(list_path, 'w', encoding='utf-8') as f:
+        for _ in range(50): # Repeat list 50 times
+            for track in music_files:
+                f.write(f"file '{track.replace(os.sep, '/')}'\n")
+    
+    try:
+        # Render Loop
+        # -t duration: trims output
+        cmd = [
+             FFMPEG_BIN, "-y", "-f", "concat", "-safe", "0",
+             "-i", list_path,
+             "-t", str(duration),
+             "-c:a", "aac", "-b:a", "192k",
+             output_path
+        ]
+        _run_command(cmd, check=True)
+        return True
+    except Exception as e:
+        logger.error(f"Music Loop generation failed: {e}")
+        return False
+    finally:
+        if os.path.exists(list_path):
+            os.remove(list_path)
