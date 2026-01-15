@@ -63,6 +63,13 @@ def run_cmd(cmd, desc=None, check=True, use_shell=False):
 def ensure_venv():
     if not os.path.exists(VENV_DIR):
         log(f"Creating virtual environment in '{VENV_DIR}'...", "ACTION")
+        
+        # COLAB SPECIFIC FIX: Ensure python3-venv is installed
+        if not IS_WINDOWS:
+            # We blindly try to install it. If we are not root/not on apt system, it will fail gracefully (check=False)
+            # This fixes the "ensurepip" error.
+            run_cmd("apt-get update && apt-get install -y python3-venv", "Installing python3-venv (Colab Fix)", check=False, use_shell=True)
+
         subprocess.run([sys.executable, "-m", "venv", VENV_DIR], check=True)
         log("Virtual environment created.", "SUCCESS")
     else:
