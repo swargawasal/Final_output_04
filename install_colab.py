@@ -61,19 +61,49 @@ def run_cmd(cmd, desc=None, check=True, use_shell=False):
         return False, e.stderr
 
 def ensure_venv():
+    should_create = False
+    
     if not os.path.exists(VENV_DIR):
+        should_create = True
+    else:
+        # Verify if PIP exists and works
+        try:
+            subprocess.run([PYTHON_EXEC, "-m", "pip", "--version"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            log(f"Virtual environment '{VENV_DIR}' exists and is healthy.", "INFO")
+        except Exception:
+            log(f"⚠️ Virtual environment '{VENV_DIR}' is corrupt (missing pip). Re-creating...", "WARN")
+            shutil.rmtree(VENV_DIR, ignore_errors=True)
+            should_create = True
+
+    if should_create:
         log(f"Creating virtual environment in '{VENV_DIR}'...", "ACTION")
         
         # COLAB SPECIFIC FIX: Ensure python3-venv is installed
         if not IS_WINDOWS:
-            # We blindly try to install it. If we are not root/not on apt system, it will fail gracefully (check=False)
-            # This fixes the "ensurepip" error.
             run_cmd("apt-get update && apt-get install -y python3-venv", "Installing python3-venv (Colab Fix)", check=False, use_shell=True)
 
-        subprocess.run([sys.executable, "-m", "venv", VENV_DIR], check=True)
-        log("Virtual environment created.", "SUCCESS")
-    else:
-        log(f"Virtual environment '{VENV_DIR}' already exists.", "INFO")
+        try:
+            subprocess.run([sys.executable, "-m", "venv", VENV_DIR], check=True)
+            log("Virtual environment created.", "SUCCESS")
+        except subprocess.CalledProcessError:
+             log("⚠️ Standard venv creation failed (ensurepip error). Trying fallback strategy...", "WARN")
+             # Fallback: Create without pip, then manually install pip
+             subprocess.run([sys.executable, "-m", "venv", VENV_DIR, "--without-pip"], check=True)
+             log("Initial venv created (no pip). Bootstrapping pip...", "ACTION")
+             
+             # Download get-pip.py
+             run_cmd("curl -fsSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py", "Downloading get-pip.py", check=False, use_shell=True)
+             
+             # Install pip using the venv's python
+             if os.path.exists("get-pip.py"):
+                 try:
+                     subprocess.run([PYTHON_EXEC, "get-pip.py"], check=True)
+                     log("Pip successfully bootstrapped via get-pip.py!", "SUCCESS")
+                 finally:
+                     os.remove("get-pip.py")
+             else:
+                 log("Failed to download get-pip.py", "ERROR")
+                 sys.exit(1)
 
 def install_deps():
     # 1. System Deps (FFmpeg)
